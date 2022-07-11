@@ -1,0 +1,9 @@
+<!--
+    <button type="button" (click)="getCard()">Show random card</button>
+-->
+<p>Pressing on the button will show you a random commander card.</p>
+<button type="button" (click)="getCommander()">Random Commander</button>
+<div *ngIf="cardToDisplay">
+    <img [src]="cardToDisplay.image_uris.normal" alt="#">
+    <p>The cards are fetched from the <a href="https://api.scryfall.com/">Scryfall Api</a></p>
+</div>
